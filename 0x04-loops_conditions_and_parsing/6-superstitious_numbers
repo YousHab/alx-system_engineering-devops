@@ -24,5 +24,6 @@ do
             echo $i
             ;;
     esac
+
     ((i++))
 done
