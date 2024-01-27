@@ -23,6 +23,6 @@ do
         *)
             echo $i
             ;;
-        esac
-        ((i++))
+    esac
+    ((i++))
 done
