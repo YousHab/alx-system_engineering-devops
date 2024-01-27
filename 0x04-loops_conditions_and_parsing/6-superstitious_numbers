@@ -1,29 +1,29 @@
 #!/usr/bin/env bash
 
-COUNT=1
-while [ $COUNT -lt 21 ]
+COUNTER=1
+while [ $COUNTER -lt 21 ]
 do
-    case $COUNT in
+    case $COUNTER in
 
         4)
-            echo $COUNT
-            echo "bad luck from China"
-            ;;
+	    echo $COUNTER
+	    echo "bad luck from China"
+	    ;;
+	
+	9)
+	    echo $COUNTER
+	    echo "bad luck from Japan"
+	    ;;
+	
+	17)
+	    echo $COUNTER
+	    echo "bad luck from Italy"
+	    ;;
 
-        9)
-            echo $COUNT
-            echo "bad luck from Japan"
-            ;;
-
-        17)
-            echo $COUNT
-            echo "bad luck from Italy"
-            ;;
-
-        *)
-            echo $COUNT
-            ;;
+	*)
+	    echo $COUNTER
+	    ;;
     esac
 
-    ((COUNT++))
+    let COUNTER+=1
 done
