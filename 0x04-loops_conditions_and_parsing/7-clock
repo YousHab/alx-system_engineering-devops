@@ -5,10 +5,10 @@ hours=0
 
 echo "Hour: $hours"
 ((hours++))
-while [ $hours -le 12 ]
+while [ $hours -lt 13 ]
 do
     minutes=0
-    while [ $minutes -le 60 ]
+    while [ $minutes -lt 61 ]
     do
         if [ $minutes -eq 60 ]
         then
