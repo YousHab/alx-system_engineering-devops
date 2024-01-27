@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-#Diplay hours
+# displays the time for 12 hours and 59 minutes.
 
 hours=0
-
 echo "Hour: $hours"
 ((hours++))
+
 while [ $hours -lt 13 ]
 do
     minutes=0
