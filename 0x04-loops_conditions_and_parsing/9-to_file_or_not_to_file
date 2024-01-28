@@ -6,17 +6,16 @@ file="school"
 
 if [ -e "$file" ]
 then
-    if [ -f "$file"]
-    content=$(cat "$file")
+    if [ -f "$file" ]
     then
-        if [ -z "$content"]
+    echo "$file file exists"
+    content=$(cat "$file")
+        if [ ! -z "$content" ]
         then
             echo "$file file is not empty"
         else
             echo "$file file is empty"
         fi
-    else
-        echo ""
     fi
 else
     echo "$file file does not exist"
