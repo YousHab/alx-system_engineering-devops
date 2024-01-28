@@ -1,10 +1,22 @@
 #!/usr/bin/env bash
 # display files name without i-
 
-for file in *; do
+#Write a Bash script that displays:
+
+#The content of the current directory
+#In a list format
+#Where only the part of the name after the first dash is displayed (refer to the example)
+#Requirements:
+
+#You must use the for loop (while and until are forbidden)
+#Do not display hidden files (file != .)
+
+
+for file in *
+do
     if [ -f "$file" ] && [[ "$file" != .* ]]
     then
-        name_after_dash=$(echo "$file" | cut -d '-' -f 2-)
-        echo "$name_after_dash"
+        new_name=$(echo "$file" | cut -d '-' -f 2-)
+        echo "$new_name"
     fi
 done
