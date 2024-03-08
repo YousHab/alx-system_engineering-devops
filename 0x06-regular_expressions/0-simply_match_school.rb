@@ -2,4 +2,4 @@
 text = ARGV[0]
 pattern = /School/
 matches = text.scan(pattern)
-puts matches.join
+puts matches.join("\n")
