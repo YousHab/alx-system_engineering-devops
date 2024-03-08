@@ -1,5 +1,5 @@
-#!/usr/bin/env ruby
+#/usr/bin/env ruby
 text = ARGV[0]
 pattern = /School/
 matches = text.scan(pattern)
-puts matches.join("\n")
+puts matches.join
