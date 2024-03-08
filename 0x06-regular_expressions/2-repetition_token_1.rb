@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 text ARGV[0]
-pattern = /hb{1}?tn/
+pattern = /hb?tn/
 matches = text.scan(pattern)
 puts matches.join()
