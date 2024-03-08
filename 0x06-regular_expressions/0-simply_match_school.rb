@@ -1,2 +1,5 @@
 #/usr/bin/env ruby
-puts ARGV[0].scan(/School/).join
+text = ARGV[0]
+pattern = "/School/"
+matches = text.match(pattern)
+puts matches.join("\n")
