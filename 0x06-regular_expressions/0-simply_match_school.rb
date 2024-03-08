@@ -1,2 +1,5 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/hbt{2,5}n/).join
+text ARGV[0]
+pattern = /[S]chool/
+matches = text.scan(pattern)
+puts matches.join()
